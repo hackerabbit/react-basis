@@ -1,15 +1,24 @@
-// import { Input } from 'antd';
-import React from 'react';
+import App from './basis/App';
 import ReactDOM from 'react-dom';
-import './index.css'
-import { BrowserRouter } from "react-router-dom";
-
-import App from './App';
-
 ReactDOM.render(
-  <BrowserRouter> 
-      <App/>
-  </BrowserRouter>,
-   document.getElementById('root'),
+  <App />,
+  document.getElementById('root'),
 );
 
+// function Clock(props) {
+//   return (
+//     <div>
+//       <h1>Hello,world!</h1>
+//       <h2>It is {props.date.toLocaleTimeString()}.</h2>
+//     </div>
+//   )
+// }
+
+// function tick() {
+//   ReactDOM.render(
+//     <Clock date={new Date()}/>,
+//     document.getElementById('root')
+//   );
+// }
+
+// setInterval(tick, 1000);
